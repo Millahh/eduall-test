@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -18,9 +18,10 @@ p, li {
 
 .table-header {
     color: #333;
-    font-size: 1.25rem;
+    font-size: 1.25rem; /* Base font size */
     font-family: 'Poppins', sans-serif;
 }
+
 .table-header th {
     border-bottom: 2px solid #dee2e6;
     letter-spacing: 1px;
@@ -36,17 +37,17 @@ p, li {
 }
 
 .product-details h5 {
-    font-size: 1.1rem;
+    font-size: 1.1rem; /* Base font size */
     margin-bottom: 10px;
 }
 
 .price {
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Base font size */
     margin-top: 5px;
 }
 
 .rating {
-    font-size: 1rem;
+    font-size: 1rem; /* Base font size */
 }
 
 .table td, .table th {
@@ -60,4 +61,20 @@ p, li {
 
 .list-unstyled li {
     padding: 3px 0;
+}
+
+/* Responsive Font Sizes */
+@media (max-width: 768px) {
+    .table-header {
+        font-size: 1rem; /* Adjusted font size for smaller screens */
+    }
+    .product-details h5 {
+        font-size: 1rem; /* Adjusted font size for smaller screens */
+    }
+    .price {
+        font-size: 1.1rem; /* Adjusted font size for smaller screens */
+    }
+    .rating {
+        font-size: 0.9rem; /* Adjusted font size for smaller screens */
+    }
 }
